@@ -3,7 +3,7 @@ function cariMean(arr) {
   for (var i = 0; i < arr.length; i++) {
     total += arr[i];
   }
-  return Math.round(total/arr.length); //pembulatan biasa atau keatas atau kebawah?
+  return Math.round(total/arr.length);
 }
 
 // TEST CASES

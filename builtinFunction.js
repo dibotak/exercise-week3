@@ -50,20 +50,20 @@ function dataHandling2(array) {
   console.log(bulan);
 
   //mengubah tipe data tanggal menjadi number
-  for (var i = 0; i < tanggal.length; i++) {
-    tanggal[i] = Number(tanggal[i]);
-  }
+  // for (var i = 0; i < tanggal.length; i++) {
+  //   tanggal[i] = Number(tanggal[i]);
+  // }
 
   //menggunakan sort, menyesuaikan output seperti pada test case
-  var sort = tanggal.sort();
-  for (var i = 0; i < sort.length; i++) {
-    if (sort[i] >= 0 && sort[i] <= 9) {
-      var temp = "0" + sort[i].toString();
-      sort[i] = temp;
-      break;
-    }
-    sort[i] = sort[i].toString();
-  }
+  var sort = tanggal.sort((a,b) => b-a);
+  // for (var i = 0; i < sort.length; i++) {
+  //   if (sort[i] >= 0 && sort[i] <= 9) {
+  //     var temp = "0" + sort[i].toString();
+  //     sort[i] = temp;
+  //     break;
+  //   }
+  //   sort[i] = sort[i].toString();
+  // }
   console.log(sort);
 
   //menggunakan join
